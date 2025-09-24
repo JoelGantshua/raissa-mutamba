@@ -15,10 +15,6 @@ import "./styles/global.css";
 function App() {
   return (
     <div className="app-container">
-      {/* Animation toile */}
-      <BackgroundLines />
-
-      {/* Sections principales */}
       <Navbar />
       <Hero />
       <Biography />
@@ -28,6 +24,9 @@ function App() {
       <Arts />
       <Contact />
       <Footer />
+
+      {/* Animation toile globale en arrière-plan */}
+      <BackgroundLines className="fixed top-0 left-0 w-full h-full -z-10 opacity-30" />
     </div>
   );
 }
