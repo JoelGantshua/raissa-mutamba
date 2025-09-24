@@ -9,6 +9,7 @@ import Arts from "./components/Arts";
 import Contact from "./components/Contact";
 import Biography from "./components/Biography";
 import Footer from "./components/Footer";
+import Loader from "./components/loader";
 import "./styles/global.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Arts />
       <Contact />
       <Footer />
+      <Loader />
   
 
     </div>
