@@ -9,7 +9,6 @@ import Arts from "./components/Arts";
 import Contact from "./components/Contact";
 import Biography from "./components/Biography";
 import Footer from "./components/Footer";
-import BackgroundLines from "./components/BackgroundLines";
 import "./styles/global.css";
 
 function App() {
