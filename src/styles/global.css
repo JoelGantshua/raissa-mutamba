@@ -31,19 +31,7 @@ button:focus::after {
 
 }
 
-/* background canvas behind everything */
-#background-canvas {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;     /* derrière le contenu */
-  pointer-events: none; /* laisse cliquer les éléments au-dessus */
-}
-/* Rendre toutes les sections flexibles */
-section {
-  padding: 60px 20px;
-}
+
 
 /* Mobile */
 @media (max-width: 768px) {
