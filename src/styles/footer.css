@@ -1,0 +1,22 @@
+.footer {
+  background-color: #161616; /* riC5 */
+  color: #D3C3B9; /* riC3 */
+  padding: 30px 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.footer .social-links {
+  margin-top: 10px;
+}
+
+.footer .social-links a {
+  color: #D3C3B9;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #B58863; /* riC4 */
+}

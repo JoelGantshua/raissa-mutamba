@@ -1,0 +1,77 @@
+/* Section About RDS */
+.about-rds {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--riC1); /* différent de Meprecc */
+  padding: 60px 20px;
+  position: relative;
+}
+
+/* Ligne de séparation au-dessus */
+.section-divider {
+  content: "";
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 20px;
+  background: linear-gradient(to right, transparent, var(--riC3), transparent);
+}
+
+.about-rds .about-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end; /* image bien collée à droite */
+}
+
+.about-rds .about-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.about-rds .about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-rds .about-text {
+  flex: 2 1 400px;
+  margin: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Titre avec soulignement animé (même style que Meprecc) */
+.about-rds .about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--riC4);
+  position: relative;
+  display: inline-block;
+}
+
+.about-rds .about-text h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--riC3);
+  margin-top: 5px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.6s ease;
+
+}
+
+.about-rds .about-text h2:hover::after {
+  transform: scaleX(1);
+}
+
+.about-rds .about-text p {
+  margin-bottom: 15px;
+  color: beige;
+}

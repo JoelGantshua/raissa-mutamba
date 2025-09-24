@@ -1,0 +1,71 @@
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff; /* blanc comme sur ton image */
+    text-align: center;
+  }
+  
+  .loader-logo {
+    width: 450px; /* ajuste selon ton logo */
+    margin-bottom: 20px;
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dots {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .dots span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #1e3a8a; /* bleu foncé */
+    animation: bounce 1.2s infinite ease-in-out;
+  }
+  
+  .dots span:nth-child(2) {
+    background: #0ea5e9; /* bleu clair */
+    animation-delay: 0.2s;
+  }
+  
+  .dots span:nth-child(3) {
+    background: #facc15; /* jaune */
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
+  
+  p {
+    color: #444;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; /* ✅ occuper toute la largeur */
+    background: #fff;
+    text-align: center;
+    position: fixed; /* ✅ reste centré même si scroll */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* ✅ passe au-dessus de tout */
+  }
+  

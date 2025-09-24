@@ -1,0 +1,142 @@
+:root {
+  --riC1: #3D4D55;
+  --riC2: #A79E9C;
+  --riC3: #D3C3B9;
+  --riC4: #B58863;
+  --riC5: #161616;
+  --riC6: #10332A;
+}
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: var(--riC3);
+  color: var(--riC5);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid var(--riC1);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: var(--riC4);
+  color: var(--riC5);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--riC1);
+  color: var(--riC2);
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 12px;
+  background-color: var(--riC1);
+  color: var(--riC2);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  background-color: var(--riC4);
+  color: var(--riC5);
+}
+
+.paypal-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--riC6);
+  color: var(--riC2);
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.paypal-link:hover {
+  transform: scale(1.05);
+  background-color: var(--riC4);
+  color: var(--riC5);
+}
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  z-index: 200;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn 0.5s forwards, fadeOut 0.5s 2.5s forwards;
+}
+
+.notification.success {
+  background-color: #28a745; /* vert */
+}
+
+.notification.error {
+  background-color: #dc3545; /* rouge */
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

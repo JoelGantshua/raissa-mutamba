@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: var(--riC1); /* Couleur opaque */
+  color: var(--riC2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* léger ombrage pour contraste */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--riC2);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  
+  color: var(--riC4);
+  transform: scale(1.05); /* léger effet au survol */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+/* Bouton Support & Offrandes dans la navbar */
+.nav-links .paypal-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--riC6);
+  color: var(--riC2);
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 0; /* dans la navbar, on n’a pas besoin de margin-top */
+  transition: background 0.3s, transform 0.3s;
+  font-weight: bold;
+}
+
+.nav-links .paypal-link:hover {
+  transform: scale(1.05);
+  background-color: var(--riC4);
+  color: var(--riC5);
+}
