@@ -23,10 +23,7 @@ function App() {
       <Arts />
       <Contact />
       <Footer />
-      <section className="relative">
-  <BackgroundLines className="absolute inset-0 opacity-20 text-[var(--riC3)]" />
   
-</section>
 
     </div>
   );
