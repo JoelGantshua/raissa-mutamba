@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutMeprecc from "./components/AboutMeprecc";
@@ -9,39 +9,25 @@ import Arts from "./components/Arts";
 import Contact from "./components/Contact";
 import Biography from "./components/Biography";
 import Footer from "./components/Footer";
-import Loader from "./components/loader";
-import BackgroundLines from "./components/BackgroundLines"; // 👉 on ajoute ton composant
+import BackgroundLines from "./components/BackgroundLines";
 import "./styles/global.css";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulation d’un petit délai avant d’afficher le site
-    const timer = setTimeout(() => setLoading(false), 2500);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="app-container">
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
-          {/* 👇 Ici ton animation de lignes */}
-          <BackgroundLines />
+      {/* Animation toile */}
+      <BackgroundLines />
 
-          <Navbar />
-          <Hero />
-          <Biography />
-          <AboutMeprecc />
-          <AboutRds />
-          <Songs />
-          <Arts />
-          <Contact />
-          <Footer />
-        </>
-      )}
+      {/* Sections principales */}
+      <Navbar />
+      <Hero />
+      <Biography />
+      <AboutMeprecc />
+      <AboutRds />
+      <Songs />
+      <Arts />
+      <Contact />
+      <Footer />
     </div>
   );
 }

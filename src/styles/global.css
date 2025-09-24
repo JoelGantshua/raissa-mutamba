@@ -40,4 +40,50 @@ button:focus::after {
   z-index: -1;     /* derrière le contenu */
   pointer-events: none; /* laisse cliquer les éléments au-dessus */
 }
+/* Rendre toutes les sections flexibles */
+section {
+  padding: 60px 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-section,
+  .contact-container,
+  .arts-grid {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .about-section img,
+  .about-text {
+    width: 100% !important;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    background: var(--riC1);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .about-section {
+    flex-wrap: wrap;
+  }
+
+  .arts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
