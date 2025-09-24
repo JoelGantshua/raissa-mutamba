@@ -24,9 +24,11 @@ function App() {
       <Arts />
       <Contact />
       <Footer />
+      <section className="relative">
+  <BackgroundLines className="absolute inset-0 opacity-20 text-[var(--riC3)]" />
+  
+</section>
 
-      {/* Animation toile globale en arrière-plan */}
-      <BackgroundLines className="fixed top-0 left-0 w-full h-full -z-10 opacity-30" />
     </div>
   );
 }
