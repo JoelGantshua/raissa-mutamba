@@ -9,7 +9,7 @@
   }
   
   .loader-logo {
-    width: 450px; /* ajuste selon ton logo */
+    width: 400px; /* ajuste selon ton logo */
     margin-bottom: 20px;
     filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
     border-radius: 15px;
