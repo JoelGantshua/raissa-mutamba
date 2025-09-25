@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/aboutMeprecc.css";
-import mepreccImage from "../assets/images/meprecc.jpeg";
+import mepreccImage from "../assets/images/meprecc.webp";
 
 const AboutMeprecc = () => {
   return (

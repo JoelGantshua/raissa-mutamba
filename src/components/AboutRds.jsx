@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/about.css"; // on sépare pour plus de clarté
-import rdsImage from "../assets/images/rds.jpeg";
+import rdsImage from "../assets/images/rds.webp";
 
 const AboutRds = () => {
   return (
