@@ -11,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_Omieq25", // Ton Service ID
-        "template_7uoki8s", // Ton Template ID
+        "service_95bfugu", // Ton Service ID
+        "template_dwsq5b9", // Ton Template ID
         e.target,
-        "p4dqyRMNBD9k9zjmz" // Ta clé publique
+        "A0WpUEmDwyGkvkHhH" // Ta clé publique
       )
       .then(
         () => {
